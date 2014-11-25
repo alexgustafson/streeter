@@ -33,7 +33,7 @@ angular.module('myApp.view1', ['ngRoute'])
                     $interval.cancel()
                 }
 
-            }, 300)
+            }, 50)
 
 
 
