@@ -10,21 +10,19 @@ angular.module('myApp.view1', ['ngRoute'])
     }])
 
     .controller('View1Ctrl', ['$scope', '$timeout', function ($scope, $timeout) {
-        var heading = 1;
-        var fenway = new google.maps.LatLng(47.3785915, 8.5409876);
+
+        var HB = new google.maps.LatLng(47.3785915, 8.5409876);
         var panoramaOptions = {
-            position: fenway,
+            position: HB,
             pov: {
                 heading: 282.05,
                 pitch: 10
-            },
-            zoomControl: false,
-            panControl: false,
-            scaleControl: false
+            }
+
         };
         var panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'), panoramaOptions);
 
-            var i = 0
+
             $timeout(function () {
 
                 panorama.setPov({heading: 282.67 , pitch: 10 });
