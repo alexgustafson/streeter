@@ -11,11 +11,11 @@ angular.module('myApp.view1', ['ngRoute'])
 
     .controller('View1Ctrl', ['$scope', '$timeout', function ($scope, $timeout) {
         var heading = 1;
-        var fenway = new google.maps.LatLng(47.3771498, 8.5411369);
+        var fenway = new google.maps.LatLng(47.3785915, 8.5409876);
         var panoramaOptions = {
             position: fenway,
             pov: {
-                heading: 259.1,
+                heading: 282.05,
                 pitch: 10
             },
             zoomControl: false,
@@ -27,16 +27,16 @@ angular.module('myApp.view1', ['ngRoute'])
             var i = 0
             $timeout(function () {
 
-                panorama.setPov({heading: 259.1 , pitch: 10 });
-                panorama.setPosition(new google.maps.LatLng(47.3771498 , 8.5411369));
+                panorama.setPov({heading: 282.67 , pitch: 10 });
+                panorama.setPosition(new google.maps.LatLng(47.3785915 , 8.5407337));
 
 
             }, 500)
 
             $timeout(function () {
 
-                panorama.setPov({heading: 259.1 , pitch: 10 });
-                panorama.setPosition(new google.maps.LatLng(47.3771231 , 8.5410176));
+                panorama.setPov({heading: 287.04 , pitch: 10 });
+                panorama.setPosition(new google.maps.LatLng(47.3786098 , 8.5405851));
 
 
             }, 1000)
@@ -44,7 +44,7 @@ angular.module('myApp.view1', ['ngRoute'])
             $timeout(function () {
 
                 panorama.setPov({heading: 279.66 , pitch: 10 });
-                panorama.setPosition(new google.maps.LatLng(47.3771002 , 8.5406845));
+                panorama.setPosition(new google.maps.LatLng(47.3786303 , 8.5404707));
 
 
 
@@ -52,8 +52,8 @@ angular.module('myApp.view1', ['ngRoute'])
 
             $timeout(function () {
 
-                panorama.setPov({heading: 293.86 , pitch: 10 });
-                panorama.setPosition(new google.maps.LatLng(47.3771249 , 8.5402853));
+                panorama.setPov({heading: 291.19 , pitch: 10 });
+                panorama.setPosition(new google.maps.LatLng(47.3786627 , 8.5403331));
 
 
 
@@ -61,8 +61,8 @@ angular.module('myApp.view1', ['ngRoute'])
 
             $timeout(function () {
 
-                panorama.setPov({heading: 294.49 , pitch: 10 });
-                panorama.setPosition(new google.maps.LatLng(47.377506 , 8.5389503));
+                panorama.setPov({heading: 291.19 , pitch: 10 });
+                panorama.setPosition(new google.maps.LatLng(47.3786974 , 8.5401985));
 
 
 
@@ -70,8 +70,8 @@ angular.module('myApp.view1', ['ngRoute'])
 
             $timeout(function () {
 
-                panorama.setPov({heading: 294.49 , pitch: 10 });
-                panorama.setPosition(new google.maps.LatLng(47.3776179 , 8.5385561));
+                panorama.setPov({heading: 291.19 , pitch: 10 });
+                panorama.setPosition(new google.maps.LatLng(47.3787367 , 8.540056));
 
 
 
@@ -79,12 +79,30 @@ angular.module('myApp.view1', ['ngRoute'])
 
             $timeout(function () {
 
-                panorama.setPov({heading: 294.49 , pitch: 10 });
-                panorama.setPosition(new google.maps.LatLng(47.3776674 , 8.5383308));
+                panorama.setPov({heading: 291.19 , pitch: 10 });
+                panorama.setPosition(new google.maps.LatLng(47.3787744 , 8.5399193));
 
 
 
             }, 3500)
+
+            $timeout(function () {
+
+                panorama.setPov({heading: 291.19 , pitch: 10 });
+                panorama.setPosition(new google.maps.LatLng(47.378813 , 8.5397793));
+
+
+
+            }, 4000)
+
+            $timeout(function () {
+
+                panorama.setPov({heading: 291.19 , pitch: 10 });
+                panorama.setPosition(new google.maps.LatLng(47.3788513 , 8.5396406));
+
+
+
+            }, 4500)
 
 
 
